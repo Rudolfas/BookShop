@@ -11,4 +11,7 @@ class CsvReader
       @books_in_stock << BookInStock.new(row["ISBN"], row["Price"])
     end
   end
+  def to_s
+   "Books In Stock:#{@books_in_stock}"
+  end
 end
